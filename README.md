@@ -146,3 +146,28 @@ After completing this lab, you will:
 ✅ Structure projects for portability and collaboration
 
 These scripting and packaging skills are essential for building automation tools and working in modern Python development workflows.
+
+## Running the Automation Tool
+
+Requires Python 3.10 and Pipenv.
+
+Install dependencies:
+
+```bash
+pipenv install --dev
+```
+
+Run the script:
+
+```bash
+pipenv run python lib/generate_log.py
+```
+
+The script fetches a sample post using requests and writes log entries
+to log_YYYYMMDD.txt in the current directory.
+
+Run tests:
+
+```bash
+pipenv run pytest
+```
